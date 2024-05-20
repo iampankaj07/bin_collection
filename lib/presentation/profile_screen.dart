@@ -11,15 +11,20 @@ class ProfileScreen extends StatelessWidget {
           key: key,
         );
 
-  TextEditingController firstNameController = TextEditingController();
+  TextEditingController firstNameController =
+      TextEditingController(text: "Geralyn");
 
-  TextEditingController lastNameController = TextEditingController();
+  TextEditingController lastNameController =
+      TextEditingController(text: "Anuada");
 
-  TextEditingController emailController = TextEditingController();
+  TextEditingController emailController =
+      TextEditingController(text: "12202889@students.koi.edu.au");
 
-  TextEditingController addressController = TextEditingController();
+  TextEditingController addressController =
+      TextEditingController(text: "48 McIntosh Rd Narraweena NSW 2099");
 
-  TextEditingController contactnumbervaController = TextEditingController();
+  TextEditingController contactnumbervaController =
+      TextEditingController(text: "+61470538796");
 
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
@@ -86,16 +91,20 @@ class ProfileScreen extends StatelessWidget {
                             child: Container(
                               height: 111.adaptSize,
                               width: 111.adaptSize,
-                              padding: EdgeInsets.all(17.h),
+                              // padding: EdgeInsets.all(17.h),
                               decoration:
                                   AppDecoration.outlinePrimary2.copyWith(
                                 borderRadius: BorderRadiusStyle.roundedBorder55,
                               ),
                               child: CustomImageView(
-                                imagePath: ImageConstant.imgImage14,
-                                height: 74.adaptSize,
+                                imagePath: ImageConstant.profile,
+                                // height: 74.adaptSize,
+                                fit: BoxFit.fill,
+                                radius: BorderRadius.circular(
+                                  50.h,
+                                ),
                                 width: 74.adaptSize,
-                                alignment: Alignment.center,
+                                // alignment: Alignment.center,
                               ),
                             ),
                           ),

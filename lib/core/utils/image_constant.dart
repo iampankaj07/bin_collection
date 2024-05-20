@@ -2,6 +2,7 @@
 class ImageConstant {
   // Image folder path
   static String imagePath = 'assets/images';
+  static String profile = '$imagePath/Profile.jpeg';
 
 // Claim Rewards - Two images
   static String imgImage6 = '$imagePath/img_image_6.png';
